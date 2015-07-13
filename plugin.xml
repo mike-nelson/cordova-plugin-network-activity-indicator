@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin id="cordova-plugin-network-activity-indicator" version="1.0.0" xmlns="http://apache.org/cordova/ns/plugins/1.0">
+    <name>Network Activity Indicator</name>
+    <description>Provides showing/hiding of activity indicator for iOS</description>
+    <author>ColorEight LLC</author>
+    <license>MIT</license>
+    <keywords>cordova,network,activity,indicator</keywords>
+
+    <js-module name="networkActivityIndicator" src="www/networkActivityIndicator.js">
+        <clobbers target="cordova.plugins.networkActivityIndicator"/>
+    </js-module>
+
+    <platform name="ios">
+        <config-file parent="/*" target="config.xml">
+            <feature name="NetworkActivityIndicator">
+                <param name="ios-package" value="NetworkActivityIndicator"/>
+            </feature>
+        </config-file>
+
+        <header-file src="src/ios/NetworkActivityIndicator.h"/>
+        <source-file src="src/ios/NetworkActivityIndicator.m"/>
+    </platform>
+</plugin>
