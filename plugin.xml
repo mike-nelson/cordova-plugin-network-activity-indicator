@@ -2,7 +2,6 @@
 <plugin id="cordova-plugin-network-activity-indicator" version="1.0.0" xmlns="http://apache.org/cordova/ns/plugins/1.0">
     <name>Network Activity Indicator</name>
     <description>Provides showing/hiding of activity indicator for iOS</description>
-    <author>ColorEight LLC</author>
     <license>MIT</license>
     <keywords>cordova,network,activity,indicator</keywords>
 
